@@ -5,13 +5,13 @@ const AboutPage = () => {
 
       <div className='space-y-5 text-neutral-600 text-base'>
         <p>
-          The <span className='font-semibold text-black'>Journal of Next-Gen Science and Engineering Applications (JNGSEA)</span> is a peer-reviewed, open access publication that
+          The <span className='font-semibold text-black'>Journal of Next-Gen Science and Technology Applications (JNGSTA)</span> is a peer-reviewed, open access publication that
           fosters the dissemination of original research in emerging scientific and engineering domains. We aim to bridge the gap between academic innovation and industry
           application by providing a dynamic platform for cutting-edge ideas and technologies.
         </p>
 
         <p>
-          Established with a mission to support young scholars, researchers, and practitioners, JNGSEA encourages submissions from diverse disciplines such as Artificial
+          Established with a mission to support young scholars, researchers, and practitioners, JNGSTA encourages submissions from diverse disciplines such as Artificial
           Intelligence, Machine Learning, Data Science, Renewable Energy Systems, IoT, Robotics, and Advanced Computing.
         </p>
 
@@ -26,7 +26,7 @@ const AboutPage = () => {
         </p>
 
         <p>
-          At JNGSEA, we are dedicated to nurturing future-forward research that can drive progress and innovation in science and engineering. Join us in shaping the next generation
+          At JNGSTA, we are dedicated to nurturing future-forward research that can drive progress and innovation in science and engineering. Join us in shaping the next generation
           of knowledge.
         </p>
       </div>

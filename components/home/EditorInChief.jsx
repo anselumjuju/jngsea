@@ -16,14 +16,14 @@ const EditorInChief = () => {
           </div>
           <div>
             <p className='pb-8'>
-              It is my great honor to be the editor-in-chief of IJCEE, which is a high-quality joumal with potential. Hope we can provide a platform for all scholars to share their
-              latest findings, ideas, etc. Hopefully, IJCEE will become a recognized joumal among the scholars in the filed of computer and communication engineering.
+              It is my great honor to be the editor-in-chief of JNGSTA, which is a high-quality joumal with potential. Hope we can provide a platform for all scholars to share
+              their latest findings, ideas, etc. Hopefully, JNGSTA will become a recognized joumal among the scholars in the filed of computer and communication engineering.
             </p>
-            <p className='font-bold text-[var(--royal-blue)]'>Dr. Maode Ma</p>
-            <p>Professor</p>
-            <p>College of Engineering</p>
-            <p>University of Edenberg</p>
-            <p>Doha, Qatar</p>
+            <p className='font-bold text-[var(--royal-blue)]'>To be updated</p>
+            <p>University of Edenberg,</p>
+            <p>Ariyapatta Campus,</p>
+            <p>Stand No 7, Enock Kavu Road,</p>
+            <p>P. O. Box: 37209, Lusaka, Zambia</p>
           </div>
         </div>
       </div>

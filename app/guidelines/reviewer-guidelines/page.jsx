@@ -4,7 +4,7 @@ const ReviewerGuidelinesPage = () => {
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Reviewer Guidelines</h1>
 
       <p className='space-y-3 text-neutral-600 text-base'>
-        Peer review is a vital process in maintaining the quality and integrity of research published in the Journal of Next-Gen Science and Engineering Applications (JNGSEA).
+        Peer review is a vital process in maintaining the quality and integrity of research published in the Journal of Next-Gen Science and Technology Applications (JNGSTA).
         Reviewers play a critical role in helping the editorial board assess the novelty, technical quality, and scientific merit of submitted manuscripts. We are grateful for your
         expertise, time, and commitment.
       </p>
@@ -53,7 +53,7 @@ const ReviewerGuidelinesPage = () => {
           </li>
           <li className='pl-5'>
             <span className='font-bold text-black'>Relevance to Scope:</span>
-            Is the paper within the aims and scope of JNGSEA?
+            Is the paper within the aims and scope of JNGSTA?
           </li>
           <li className='pl-5'>
             <span className='font-bold text-black'>Clarity and Structure:</span>
@@ -121,7 +121,7 @@ const ReviewerGuidelinesPage = () => {
       <div className='space-y-1.5 text-neutral-600 text-base'>
         <h5 className='py-2 text-lg font-bold text-neutral-700'>Recognition</h5>
         <p className='space-y-3 text-neutral-600 text-base'>
-          JNGSEA values the time and effort reviewers contribute to the journal. Reviewers will receive formal acknowledgment and may be considered for Editorial Board positions
+          JNGSTA values the time and effort reviewers contribute to the journal. Reviewers will receive formal acknowledgment and may be considered for Editorial Board positions
           based on their performance and commitment.
         </p>
       </div>

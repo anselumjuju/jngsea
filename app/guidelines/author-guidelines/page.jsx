@@ -4,14 +4,14 @@ const AuthorGuidelinesPage = () => {
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Author Guidelines</h1>
 
       <p className='space-y-3 text-neutral-600 text-base'>
-        Authors are invited to submit original, high-quality manuscripts that align with the scope of the Journal of Next-Gen Science and Engineering Applications (JNGSEA). To
+        Authors are invited to submit original, high-quality manuscripts that align with the scope of the Journal of Next-Gen Science and Technology Applications (JNGSTA). To
         ensure a smooth review and publication process, please adhere to the following guidelines.
       </p>
 
       <div className='space-y-1.5 text-neutral-600 text-base'>
         <h5 className='py-2 text-lg font-bold text-neutral-700'>Manuscript Preparation</h5>
         <ul className='space-y-1.5 list-inside list-disc disc-[var(--royal-yellow)]'>
-          <li className='pl-5'>Manuscripts should be written in clear, concise English and formatted according to the JNGSEA template.</li>
+          <li className='pl-5'>Manuscripts should be written in clear, concise English and formatted according to the JNGSTA template.</li>
           <li className='pl-5'>Include title, abstract, keywords, introduction, methodology, results, discussion, conclusion, and references.</li>
           <li className='pl-5'>All figures and tables should be numbered and captioned appropriately.</li>
           <li className='pl-5'>Use SI units and standard nomenclature where applicable.</li>
@@ -75,7 +75,7 @@ const AuthorGuidelinesPage = () => {
       <div className='space-y-1.5 text-neutral-600 text-base'>
         <h5 className='py-2 text-lg font-bold text-neutral-700'>Publication Fees and Licensing</h5>
         <p className='space-y-3 text-neutral-600 text-base'>
-          JNGSEA does not charge submission or processing fees. Published articles are open access under a Creative Commons license, allowing for wide dissemination and reuse with
+          JNGSTA does not charge submission or processing fees. Published articles are open access under a Creative Commons license, allowing for wide dissemination and reuse with
           proper attribution.
         </p>
       </div>
@@ -83,7 +83,7 @@ const AuthorGuidelinesPage = () => {
       <div className='space-y-1.5 text-neutral-600 text-base'>
         <h5 className='py-2 text-lg font-bold text-neutral-700'>Support</h5>
         <p className='space-y-3 text-neutral-600 text-base'>
-          For any questions regarding submission, formatting, or policies, please contact the editorial office at <span className='text-black font-medium'>editor@jngsea.org</span>.
+          For any questions regarding submission, formatting, or policies, please contact the editorial office at <span className='text-black font-medium'>editor@JNGSTA.org</span>.
         </p>
       </div>
     </div>

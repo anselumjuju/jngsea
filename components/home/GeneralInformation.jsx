@@ -5,32 +5,32 @@ const GeneralInformation = () => {
       <div className='w-full space-y-2'>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>ISSN:</span> 2010-3743 (Online)
+            <span className='mr-2 font-bold text-neutral-700'>ISSN:</span> To be Updated
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>Abbreviated Title:</span> Int. J. Comput. Comm. Eng.
+            <span className='mr-2 font-bold text-neutral-700'>Abbreviated Title:</span> To be Updated
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>Frequency:</span> Quarterly
+            <span className='mr-2 font-bold text-neutral-700'>Frequency:</span> Monthly
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>DOI:</span> 10.17706/JNGSEA
+            <span className='mr-2 font-bold text-neutral-700'>DOI:</span> To be Updated
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>Editor-in-chief:</span> Dr. Maode Ma
+            <span className='mr-2 font-bold text-neutral-700'>Editor-in-chief:</span> To be Updated
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>E-mail:</span> editor.jngsea@rise10steps.com
+            <span className='mr-2 font-bold text-neutral-700'>E-mail:</span> editor.JNGSTA@rise10steps.com
           </p>
         </div>
       </div>

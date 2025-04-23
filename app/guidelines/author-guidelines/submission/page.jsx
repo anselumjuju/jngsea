@@ -6,7 +6,7 @@ const SubmissionPage = () => {
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Submission Guidelines</h1>
       <div className='space-y-3 text-neutral-600 text-base'>
         <p>
-          JNGSEA is dedicated to the fair, unbiased, and timely peer review and publication of all submissions. The journal ensures that commercial interests have no influence on
+          JNGSTA is dedicated to the fair, unbiased, and timely peer review and publication of all submissions. The journal ensures that commercial interests have no influence on
           editorial decisions.
         </p>
       </div>
@@ -18,7 +18,7 @@ const SubmissionPage = () => {
         <ul className='space-y-1.5 list-inside list-disc'>
           <li>Original and unpublished</li>
           <li>Not under consideration elsewhere</li>
-          <li>Written in English and formatted using the official JNGSEA Template (available on request)</li>
+          <li>Written in English and formatted using the official JNGSTA Template (available on request)</li>
         </ul>
       </div>
       <div className='space-y-1.5 text-neutral-600 text-base'>
@@ -60,7 +60,7 @@ const SubmissionPage = () => {
       </div>
       <div className='space-y-1.5 text-neutral-600 text-base'>
         <h5 className='py-2 text-lg font-bold text-neutral-700'>Honor Code and Plagiarism Statement</h5>
-        <p>Authors must uphold the highest standards of academic integrity. By submitting to JNGSEA, authors agree that:</p>
+        <p>Authors must uphold the highest standards of academic integrity. By submitting to JNGSTA, authors agree that:</p>
         <ul className='space-y-1.5 list-inside list-disc'>
           <li>The work is their own</li>
           <li>All references are properly cited</li>
@@ -90,7 +90,7 @@ const SubmissionPage = () => {
       <div className='space-y-1.5 text-neutral-600 text-base'>
         <h5 className='py-2 text-lg font-bold text-neutral-700'>Publication Ethics and Malpractice Ethics</h5>
         <p>
-          JNGSEA is committed to maintaining the highest standards of publication ethics and adheres to the guidelines outlined by the Committee on Publication Ethics (COPE). The
+          JNGSTA is committed to maintaining the highest standards of publication ethics and adheres to the guidelines outlined by the Committee on Publication Ethics (COPE). The
           ethical standards apply to all parties involved in publishing: authors, editors, peer reviewers, and the publisher.
         </p>
       </div>

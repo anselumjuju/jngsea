@@ -3,9 +3,9 @@ const PublicationChargePage = () => {
     <div className='flex items-start flex-col gap-y-8'>
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Publication Charge</h1>
 
-      <p className='space-y-3 text-neutral-600 text-base'>Journal of Next-Gen Science and Engineering Applications (JNGSEA)</p>
+      <p className='space-y-3 text-neutral-600 text-base'>Journal of Next-Gen Science and Technology Applications (JNGSTA)</p>
       <p className='space-y-3 text-neutral-600 text-base'>
-        The Journal of Next-Gen Science and Engineering Applications (JNGSEA) is committed to offering quality open-access publication services to authors and readers across the
+        The Journal of Next-Gen Science and Technology Applications (JNGSTA) is committed to offering quality open-access publication services to authors and readers across the
         globe.
       </p>
       <p className='space-y-3 text-neutral-600 text-base'>
@@ -50,7 +50,7 @@ const PublicationChargePage = () => {
         <p className='space-y-3 text-neutral-600 text-base'>For payment instructions and invoice requests, authors will be contacted by the editorial team after acceptance.</p>
         <p className='space-y-3 text-neutral-600 text-base'>For queries regarding publication charges or waiver requests, please contact:</p>
         <p className='space-y-3 text-neutral-600 text-base'>
-          <span className='font-bold text-black'>Email:</span> editor.jngsea@rise10steps.com
+          <span className='font-bold text-black'>Email:</span> editor.JNGSTA@rise10steps.com
         </p>
       </div>
     </div>

@@ -7,7 +7,7 @@ const OpenAccessPage = () => {
         <div className='space-y-3 text-neutral-600 text-base'>
           <h5 className='py-2 text-lg font-bold text-neutral-700'>Open Access Statement</h5>
           <p>
-            Journal of Next-Gen Science and Engineering Applications (JNGSEA) follows the Open Access publishing model, ensuring that research outputs are freely available to all
+            Journal of Next-Gen Science and Technology Applications (JNGSTA) follows the Open Access publishing model, ensuring that research outputs are freely available to all
             without financial, legal, or technical barriers. In this model, readers and their institutions are not charged for access. Users are permitted to read, download, copy,
             distribute, print, search, or link to the full texts of articles, or use them for any lawful non-commercial purpose, without asking prior permission from the publisher
             or the author.
@@ -21,7 +21,7 @@ const OpenAccessPage = () => {
         <div className='space-y-3 text-neutral-600 text-base'>
           <h5 className='py-2 text-lg font-bold text-neutral-700'>Publication Ethics and Malpractice Ethics</h5>
           <p>
-            JNGSEA is committed to maintaining the highest standards of publication ethics and adheres to the guidelines outlined by the Committee on Publication Ethics (COPE). The
+            JNGSTA is committed to maintaining the highest standards of publication ethics and adheres to the guidelines outlined by the Committee on Publication Ethics (COPE). The
             ethical standards apply to all parties involved in publishing: authors, editors, peer reviewers, and the publisher.
           </p>
         </div>
@@ -99,7 +99,7 @@ const OpenAccessPage = () => {
 
         <div className='space-y-3 text-neutral-600 text-base'>
           <p>
-            JNGSEA is dedicated to the fair, unbiased, and timely peer review and publication of all submissions. The journal ensures that commercial interests have no influence on
+            JNGSTA is dedicated to the fair, unbiased, and timely peer review and publication of all submissions. The journal ensures that commercial interests have no influence on
             editorial decisions.
           </p>
         </div>

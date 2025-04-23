@@ -28,7 +28,7 @@ const Footer = () => {
         <div className='w-full space-y-3'>
           <p className='text-xl font-medium text-neutral-800'>About</p>
           <div className='text-sm text-[var(--royal-blue)] flex flex-col gap-y-2'>
-            <Link href={'/about'}>About JNGSEA</Link>
+            <Link href={'/about'}>About JNGSTA</Link>
             <Link href={'/editorial-board'}>Editorial Board</Link>
             <Link href={'/faqs'}>FAQs</Link>
             <Link href={'/contact-us'}>Contact Us</Link>
