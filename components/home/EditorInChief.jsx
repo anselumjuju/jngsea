@@ -16,14 +16,17 @@ const EditorInChief = () => {
           </div>
           <div>
             <p className='pb-8'>
-              It is my great honor to be the editor-in-chief of JNGSTA, which is a high-quality joumal with potential. Hope we can provide a platform for all scholars to share
-              their latest findings, ideas, etc. Hopefully, JNGSTA will become a recognized joumal among the scholars in the filed of computer and communication engineering.
+              Welcome to the Journal of Next-Gen Science and Technology Applications! <br />
+              As we navigate the rapidly evolving landscape of science and technology, our journal serves as a platform for innovators, researchers, and practitioners to share
+              groundbreaking discoveries and applications.
+              <br />
+              We invite submissions that showcase cutting-edge advancements, explore new frontiers, and shape the future of technology.
+              <br />
+              Join us in pushing the boundaries of knowledge and innovation.
             </p>
-            <p className='font-bold text-[var(--royal-blue)]'>To be updated</p>
-            <p>University of Edenberg,</p>
-            <p>Ariyapatta Campus,</p>
-            <p>Stand No 7, Enock Kavu Road,</p>
-            <p>P. O. Box: 37209, Lusaka, Zambia</p>
+            <p className='font-bold text-[var(--royal-blue)]'>Dr Krishnan Anand</p>
+            <p>Editor In Chief</p>
+            <p>JNGSTA</p>
           </div>
         </div>
       </div>
