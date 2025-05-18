@@ -1,8 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import SideBar from './SideBar';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+  const pathname = usePathname();
+  if (pathname.includes('/studio')) return null;
   return (
     <header className='px-2 py-4 space-y-3'>
       <div className='lg:px-2 flex items-center justify-between'>

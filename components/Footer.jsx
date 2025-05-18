@@ -1,7 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
+  const pathname = usePathname();
+  if (pathname.includes('/studio')) return null;
+
   return (
     <footer className='w-full pt-14 py-10 bg-[#ccc] text-white space-y-8'>
       <div className='max-w-screen-xl mx-auto p-4 grid grid-cols-2 md:grid-cols-4 gap-8 gap-y-12 lg:gap-16'>
