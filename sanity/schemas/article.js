@@ -72,11 +72,10 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'keywords',
-      title: 'Keywords',
-      type: 'array',
-      of: [{ type: 'string' }],
-      validation: (Rule) => Rule.min(4).max(8).error('Select between 4 to 8 relevant keywords.'),
+      name: 'description',
+      title: 'Description',
+      type: 'text',
+      validation: (Rule) => Rule.required().min(500).max(800).error('Description must be between 400 to 700 characters'),
     }),
     defineField({
       name: 'pdf',
