@@ -8,8 +8,10 @@ export async function GET() {
       _id,
       title,
       "slug": slug.current,
-      abstract,
+      description,
       image,
+      volume,
+      issue
     }
   }`;
 

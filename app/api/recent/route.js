@@ -3,12 +3,14 @@ import { groq } from 'next-sanity';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const query = groq`*[_type == "article"] | order(_createdAt desc)[0...5]{
+  const query = groq`*[_type == "article"] | order(_createdAt desc)[0...4]{
       _id,
       title,
       "slug": slug.current,
-      abstract,
+      description,
       image,
+      volume,
+      issue
     }`;
 
   try {

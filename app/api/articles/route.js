@@ -3,7 +3,10 @@ import { groq } from 'next-sanity';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const query = groq`*[_type == "article"]`;
+  const query = groq`*[_type == "article"]{
+  ...,
+  "pdf": pdf.asset -> url
+}`;
 
   try {
     const articles = await sanityClient.fetch(query);

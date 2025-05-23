@@ -4,7 +4,10 @@ import { NextResponse } from 'next/server';
 
 export async function GET(req, { params }) {
   const id = (await params).id;
-  const query = groq`*[_type == "article" && _id == $id]`;
+  const query = groq`*[_type == "article" && _id == $id][0]{
+  ...,
+  "pdf": pdf.asset -> url
+}`;
 
   try {
     const articles = await sanityClient.fetch(query, { id });
