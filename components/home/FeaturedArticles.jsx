@@ -1,8 +1,11 @@
 import urlFor from '@/lib/imageUrlBuilder';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FeaturedArticles = async () => {
-  const { data, status } = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/featured`).then((res) => res.json());
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+
+  const { data, status } = await fetch(`${baseURL}/api/featured`).then((res) => res.json());
 
   if (status !== 200) return null;
 
@@ -18,7 +21,9 @@ const FeaturedArticles = async () => {
         <div className='w-full h-full flex flex-col items-start justify-between gap-2'>
           <h1 className='text-lg font-bold line-clamp-3'>{article.title}</h1>
           <p className='text-sm text-neutral-600 line-clamp-10'>{article.description}</p>
-          <button className='mt-6 border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>Read More</button>
+          <button className='mt-6 border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>
+            <Link href={`/archives/${article.volume._ref}/${article.issue._ref}/${article._id}`}>Read More</Link>
+          </button>
         </div>
       </div>
     </div>

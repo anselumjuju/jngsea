@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET(req, { params }) {
   const id = (await params).id;
-  const query = groq`*[_type == "issue" && _id == $id]`;
+  const query = groq`*[_type == "issue" && _id == $id][0]`;
 
   try {
     const issues = await sanityClient.fetch(query, { id });

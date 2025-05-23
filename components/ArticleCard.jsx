@@ -1,7 +1,8 @@
 import urlFor from '@/lib/imageUrlBuilder';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const ArticleCard = ({ image, title, description }) => {
+const ArticleCard = ({ image, title, description, issue, volume, _id }) => {
   return (
     <div className='h-full flex flex-col gap-2'>
       <div className='w-full basis-[200px] flex-none overflow-hidden rounded-md'>
@@ -10,7 +11,9 @@ const ArticleCard = ({ image, title, description }) => {
       <div className='w-full h-full flex flex-col items-start justify-between gap-2'>
         <h1 className='text-base font-bold line-clamp-2'>{title}</h1>
         <p className='text-sm text-neutral-600 line-clamp-3'>{description}</p>
-        <button className='border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>Read More</button>
+        <button className='border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>
+          <Link href={`/archives/${volume._ref}/${issue._ref}/${_id}`}>Read More</Link>
+        </button>
       </div>
     </div>
   );

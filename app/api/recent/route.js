@@ -9,6 +9,8 @@ export async function GET() {
       "slug": slug.current,
       description,
       image,
+      volume,
+      issue
     }`;
 
   try {

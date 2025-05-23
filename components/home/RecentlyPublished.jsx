@@ -1,7 +1,9 @@
 import ArticleCard from '../ArticleCard';
 
 const RecentlyPublished = async () => {
-  const { data, status } = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/recent`).then((res) => res.json());
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+
+  const { data, status } = await fetch(`${baseURL}/api/recent`).then((res) => res.json());
 
   if (status !== 200) return null;
 
