@@ -34,6 +34,7 @@ export async function GET(req) {
         },
       },
       "slug": slug.current,
+      _createdAt
     }
   `;
 

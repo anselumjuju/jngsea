@@ -9,7 +9,8 @@ export async function GET(req, { params }) {
       _id,
       name,
       "slug": slug.current,
-      year
+      year,
+      _createdAt
     }  
   `;
 

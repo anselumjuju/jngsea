@@ -31,7 +31,8 @@ export async function GET() {
           "slug": slug.current,
           year
         },
-      }
+      },
+      _createdAt,
     }         
   `;
 

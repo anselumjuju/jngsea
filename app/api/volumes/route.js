@@ -8,7 +8,8 @@ export async function GET() {
       _id,
       name,
       "slug": slug.current,
-      year
+      year,
+      _createdAt
     }
   `;
 

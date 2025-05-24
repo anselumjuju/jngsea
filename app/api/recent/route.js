@@ -29,6 +29,7 @@ export async function GET() {
         },
       },
       "slug": slug.current,
+      _createdAt
     }
   `;
 
