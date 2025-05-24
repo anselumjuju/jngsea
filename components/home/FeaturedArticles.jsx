@@ -18,7 +18,7 @@ const FeaturedArticles = async () => {
       <h1 className='text-4xl font-serif'>Featured Articles</h1>
       <div className='h-full flex flex-col md:flex-row gap-6'>
         <div className='w-full h-[350px] md:h-[300px]'>
-          <Image src={urlFor(article.image).url()} alt={article.title} width={100} height={100} className='w-full h-full object-cover' unoptimized lazyBoundary='400px' />
+          <Image src={urlFor(article.image).url()} alt={article.title} width={100} height={100} className='w-full h-full object-cover' unoptimized />
         </div>
         <div className='w-full h-full flex flex-col items-start justify-between gap-2'>
           <h1 className='text-lg font-bold line-clamp-3'>{article.title}</h1>

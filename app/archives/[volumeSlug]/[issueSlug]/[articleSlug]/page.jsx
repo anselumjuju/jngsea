@@ -46,7 +46,7 @@ const ArticlePage = async ({ params }) => {
         </div>
       </div>
       <div className='w-full aspect-video lg:aspect-auto lg:max-h-[450px] rounded-md overflow-clip'>
-        <Image src={urlFor(article.image).url()} alt={article.title} width={100} height={100} className='w-full h-full object-cover' unoptimized lazyBoundary='400px' />
+        <Image src={urlFor(article.image).url()} alt={article.title} width={100} height={100} className='w-full h-full object-cover' unoptimized />
       </div>
       <AbstractText abstract={article.abstract} />
       <button className='bg-[var(--royal-blue)] text-white py-2 px-6 text-sm text-nowrap cursor-pointer'>
