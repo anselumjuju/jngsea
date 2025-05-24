@@ -2,13 +2,18 @@ import { client as sanityClient } from '@/sanity/lib/client';
 import { groq } from 'next-sanity';
 import { NextResponse } from 'next/server';
 
-export async function GET() {
+export async function GET(req, { params }) {
+  const { slug } = await params;
   const query = groq`
-    *[_type=='article'] | order(_createdAt desc)[0...4]{
+    *[_type=='article' && slug.current == $slug][0]{
       _id,
+      "doi": DOI,
+      "issn": ISSN,
       title,
-      description,
+      abstract,
       image,
+      author,
+      description,
       "volume": volume -> {
         _id,
         name,
@@ -29,11 +34,13 @@ export async function GET() {
         },
       },
       "slug": slug.current,
+      "pdf": pdf.asset -> url,
+      _createdAt,
     }
   `;
 
   try {
-    const articles = await sanityClient.fetch(query);
+    const articles = await sanityClient.fetch(query, { slug });
     return NextResponse.json({ data: articles, status: 200 });
   } catch (err) {
     console.error('Error fetching recent articles:', err);

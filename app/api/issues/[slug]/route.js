@@ -3,11 +3,24 @@ import { groq } from 'next-sanity';
 import { NextResponse } from 'next/server';
 
 export async function GET(req, { params }) {
-  const id = (await params).id;
-  const query = groq`*[_type == "issue" && _id == $id][0]`;
+  const { slug } = await params;
+  const query = groq`
+    *[_type=='issue' && slug.current == $slug][0]{
+      _id,
+      name,
+      "slug": slug.current,
+      "volume": volume -> {
+        _id,
+        name,
+        "slug": slug.current,
+        year
+      },
+      createdAt,
+    }
+  `;
 
   try {
-    const issues = await sanityClient.fetch(query, { id });
+    const issues = await sanityClient.fetch(query, { slug });
     return NextResponse.json({ data: issues, status: 200 });
   } catch (err) {
     console.error('Error fetching issues:', err);

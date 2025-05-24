@@ -3,7 +3,20 @@ import { groq } from 'next-sanity';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const query = groq`*[_type == "issue"]`;
+  const query = groq`
+    *[_type=='issue']{
+      _id,
+      name,
+      "slug": slug.current,
+      "volume": volume -> {
+        _id,
+        name,
+        "slug": slug.current,
+        year
+      },
+      _createdAt,
+    } 
+  `;
 
   try {
     const issues = await sanityClient.fetch(query);

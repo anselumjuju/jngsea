@@ -3,10 +3,40 @@ import { groq } from 'next-sanity';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const query = groq`*[_type == "article"]{
-  ...,
-  "pdf": pdf.asset -> url
-}`;
+  const query = groq`
+    *[_type=='article']{
+      _id,
+      "doi": DOI,
+      "issn": ISSN,
+      title,
+      abstract,
+      image,
+      author,
+      description,
+      "volume": volume -> {
+        _id,
+        name,
+        _createdAt,
+        "slug": slug.current,
+        year
+      }, 
+      "issue": issue -> {
+        _id,
+        name,
+        "slug": slug.current,
+        _createdAt,
+        "volume": volume -> {
+          _id,
+          name,
+          "slug": slug.current,
+          year
+        },
+      },
+      "slug": slug.current,
+      "pdf": pdf.asset -> url,
+      _createdAt,
+    }
+  `;
 
   try {
     const articles = await sanityClient.fetch(query);
