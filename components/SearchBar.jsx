@@ -2,7 +2,7 @@
 
 import { Search } from 'lucide-react';
 import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const SearchBar = () => {
   const router = useRouter();
@@ -10,11 +10,9 @@ const SearchBar = () => {
   const [query, setQuery] = useState(pathname.split('/').pop());
   const handleSearch = (e) => {
     e.preventDefault();
+    if (!query) return;
     router.push(`/search/${query}`);
   };
-  useEffect(() => {
-    console.log(pathname.includes('search'));
-  }, []);
   return (
     <div className='w-full max-w-screen-md xl:max-w-screen-lg flex flex-col items-start gap-5'>
       {!pathname.includes('search') && (

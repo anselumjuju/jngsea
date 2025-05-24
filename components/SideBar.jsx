@@ -23,7 +23,7 @@ const SideBar = () => {
                 <Link href={'/about'}>About</Link>
               </li>
               <li>
-                <Link href={'/current-issue'}>Current Issue</Link>
+                <Link href={'/archives'}>Current Issue</Link>
               </li>
               <li>
                 <Link href={'/archives'}>Archives</Link>
@@ -38,12 +38,20 @@ const SideBar = () => {
                 <Link href={'/editorial-board'}>Editorial Board</Link>
               </li>
               <li>
-                <Link href={'/faqs'}>FAQs</Link>
+                <Link href={'/guidelines/author-guidelines/aims-scope'}>Aims & Scope</Link>
+              </li>
+              <li>
+                <Link href={'/guidelines/author-guidelines/publication-charge'}>Publication Charges</Link>
+              </li>
+              <li>
+                <Link href={'/guidelines/writing-tips'}>Writing Tips</Link>
               </li>
               <li>
                 <Link href={'/contact'}>Contact</Link>
               </li>
-              <button className='bg-[var(--royal-blue)] text-white py-2 px-6 text-sm text-nowrap cursor-pointer'>Publish with Us</button>
+              <Link href={'/guidelines/author-guidelines/submission'}>
+                <button className='bg-[var(--royal-blue)] text-white py-2 px-6 text-sm text-nowrap cursor-pointer'>Publish with Us</button>
+              </Link>
             </ul>
           </button>
         </div>

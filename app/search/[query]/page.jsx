@@ -3,8 +3,6 @@ import SearchBar from '@/components/SearchBar';
 import { notFound } from 'next/navigation';
 
 const getData = async ({ query }) => {
-  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/search?query=${query}`;
-  console.log(url);
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/search?query=${query}`);
   const articles = await res.json();
 
@@ -24,7 +22,7 @@ const page = async ({ params }) => {
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Search results for "{query}"</h1>
 
       {articles.length > 0 ? (
-        <div className='w-full px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4'>
+        <div className='w-full px-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-8 gap-y-4'>
           {articles.map((article) => (
             <div key={article._id} className='sm:max-w-[350px] mx-auto'>
               <ArticleCard {...article} />
