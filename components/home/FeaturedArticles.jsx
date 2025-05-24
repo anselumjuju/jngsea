@@ -1,15 +1,17 @@
 import urlFor from '@/lib/imageUrlBuilder';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+
+const getFeaturedArticle = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/featured`);
+  const { data, status } = await res.json();
+  if (status !== 200) notFound();
+  return { article: data };
+};
 
 const FeaturedArticles = async () => {
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
-
-  const { data, status } = await fetch(`${baseURL}/api/featured`).then((res) => res.json());
-
-  if (status !== 200) return null;
-
-  const { article } = data;
+  const { article } = await getFeaturedArticle();
 
   return (
     <div className='max-w-screen-xl mx-auto px-2 flex flex-col gap-10'>
@@ -22,7 +24,7 @@ const FeaturedArticles = async () => {
           <h1 className='text-lg font-bold line-clamp-3'>{article.title}</h1>
           <p className='text-sm text-neutral-600 line-clamp-10'>{article.description}</p>
           <button className='mt-6 border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>
-            <Link href={`/archives/${article.volume._ref}/${article.issue._ref}/${article._id}`}>Read More</Link>
+            <Link href={`/archives/${article.volume.slug}/${article.issue.slug}/${article.slug}`}>Read More</Link>
           </button>
         </div>
       </div>

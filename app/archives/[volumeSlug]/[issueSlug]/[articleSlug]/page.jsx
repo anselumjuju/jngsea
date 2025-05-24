@@ -2,17 +2,17 @@ import AbstractText from '@/components/ui/AbstractText';
 import urlFor from '@/lib/imageUrlBuilder';
 import Image from 'next/image';
 
+const getData = async ({ articleSlug }) => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/articles/${articleSlug}`);
+  const { data, status } = await res.json();
+  if (status !== 200) notFound();
+  return { article: data };
+};
+
 const ArticlePage = async ({ params }) => {
-  const articleSlug = (await params).articleSlug;
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+  const { articleSlug } = await params;
 
-  const { data: article, status: articleStatus } = await fetch(`${baseURL}/api/articles/${articleSlug}`).then((res) => res.json());
-  const { data: volumes, status: volumesStatus } = await fetch(`${baseURL}/api/volumes`).then((res) => res.json());
-  const { data: issues, status: issuesStatus } = await fetch(`${baseURL}/api/issues`).then((res) => res.json());
-
-  if (articleStatus !== 200 || volumesStatus !== 200 || issuesStatus !== 200) return null;
-  const volume = volumes.find((volume) => volume._id === article.volume._ref);
-  const issue = issues.find((issue) => issue._id === article.issue._ref);
+  const { article } = await getData({ articleSlug });
 
   return (
     <div className='min-h-dvh flex items-start flex-col gap-y-8'>
@@ -24,22 +24,22 @@ const ArticlePage = async ({ params }) => {
       <div className='w-full space-y-1'>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>Volume:</span> {volume.name} - {volume.year}
+            <span className='mr-2 font-bold text-neutral-700'>Volume:</span> {article.volume.name} - {article.volume.year}
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>Issue:</span> {issue.name}
+            <span className='mr-2 font-bold text-neutral-700'>Issue:</span> {article.issue.name}
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>ISSN:</span> {article.ISSN}
+            <span className='mr-2 font-bold text-neutral-700'>ISSN:</span> {article.issn}
           </p>
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>DOI:</span> {article.DOI}
+            <span className='mr-2 font-bold text-neutral-700'>DOI:</span> {article.doi}
           </p>
         </div>
       </div>

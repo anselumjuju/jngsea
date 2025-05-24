@@ -2,7 +2,7 @@ import urlFor from '@/lib/imageUrlBuilder';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const ArticleCard = ({ image, title, description, issue, volume, _id }) => {
+const ArticleCard = ({ image, title, description, issue, volume, slug }) => {
   return (
     <div className='h-full flex flex-col gap-2'>
       <div className='w-full basis-[200px] flex-none overflow-hidden rounded-md'>
@@ -12,7 +12,7 @@ const ArticleCard = ({ image, title, description, issue, volume, _id }) => {
         <h1 className='text-base font-bold line-clamp-2'>{title}</h1>
         <p className='text-sm text-neutral-600 line-clamp-3'>{description}</p>
         <button className='border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>
-          <Link href={`/archives/${volume._ref}/${issue._ref}/${_id}`}>Read More</Link>
+          <Link href={`/archives/${volume.slug}/${issue.slug}/${slug}`}>Read More</Link>
         </button>
       </div>
     </div>
