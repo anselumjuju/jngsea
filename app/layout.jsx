@@ -3,9 +3,9 @@ import Header from '@/components/Header';
 import './globals.css';
 import Footer from '@/components/Footer';
 
-const playFairDisplay = Playfair_Display({ variable: '--font-playfair-display', subsets: ['latin'] });
-const nunito = Nunito({ variable: '--font-nunito', subsets: ['latin'] });
-const roboto = Roboto({ variable: '--font-roboto', subsets: ['latin'] });
+const playFairDisplay = Playfair_Display({ variable: '--font-playfair-display', subsets: ['latin'], display: 'swap' });
+const nunito = Nunito({ variable: '--font-nunito', subsets: ['latin'], display: 'swap' });
+const roboto = Roboto({ variable: '--font-roboto', subsets: ['latin'], display: 'swap', weight: ['100', '300', '400', '500', '700', '900'] });
 
 export const metadata = {
   title: 'JNGSTA',
