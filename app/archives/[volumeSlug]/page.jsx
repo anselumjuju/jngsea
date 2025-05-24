@@ -18,6 +18,7 @@ const getData = async ({ volumeSlug }) => {
 const VolumesPage = async ({ params }) => {
   const { volumeSlug } = await params;
   const { volume, issues, articles } = await getData({ volumeSlug });
+  if (!volume || !issues || !articles) notFound();
 
   return (
     <div className='min-h-dvh flex items-start flex-col gap-y-12'>

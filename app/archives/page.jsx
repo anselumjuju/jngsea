@@ -15,6 +15,7 @@ const getData = async () => {
 
 const ArchivesPage = async () => {
   const { volumes, issues } = await getData();
+  if (!volumes || !issues) notFound();
 
   return (
     <div className='min-h-dvh flex items-start flex-col gap-y-12'>

@@ -14,6 +14,8 @@ const ArticlePage = async ({ params }) => {
 
   const { article } = await getData({ articleSlug });
 
+  if (!article) notFound();
+
   return (
     <div className='min-h-dvh flex items-start flex-col gap-y-8'>
       <div className='space-y-2'>

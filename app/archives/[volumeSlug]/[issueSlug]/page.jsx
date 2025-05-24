@@ -2,22 +2,22 @@ import ArticleCard from '@/components/ArticleCard';
 import { notFound } from 'next/navigation';
 
 const getData = async ({ volumeSlug, issueSlug }) => {
-  const volumeRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/volumes/${volumeSlug}`);
   const issueRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/issues/${issueSlug}`);
   const articlesRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/articles`);
 
-  const volume = await volumeRes.json();
   const issue = await issueRes.json();
   const articles = await articlesRes.json();
 
-  if (volume.status !== 200 || issue.status !== 200 || articles.status !== 200) notFound();
+  if (issue.status !== 200 || articles.status !== 200) notFound();
 
-  return { volume: volume.data, issue: issue.data, articles: articles.data };
+  return { issue: issue.data, articles: articles.data };
 };
 
 const IssuesPage = async ({ params }) => {
   const { volumeSlug, issueSlug } = await params;
-  const { volume, issue, articles } = await getData({ volumeSlug, issueSlug });
+  const { issue, articles } = await getData({ volumeSlug, issueSlug });
+
+  if (!issue || !articles) notFound();
 
   const filteredArticles = articles.filter((article) => article.issue._id === issue._id);
 
