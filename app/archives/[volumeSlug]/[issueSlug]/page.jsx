@@ -1,7 +1,7 @@
 import ArticleCard from '@/components/ArticleCard';
 import { notFound } from 'next/navigation';
 
-const getData = async ({ volumeSlug, issueSlug }) => {
+const getData = async ({ issueSlug }) => {
   const issueRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/issues/${issueSlug}`);
   const articlesRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/articles`);
 

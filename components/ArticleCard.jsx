@@ -9,7 +9,9 @@ const ArticleCard = ({ image, title, description, issue, volume, slug }) => {
         <Image src={urlFor(image).url()} alt={title} width={100} height={100} className='w-full h-full object-cover' unoptimized lazyBoundary='400px' />
       </div>
       <div className='w-full h-full flex flex-col items-start justify-between gap-2'>
-        <h1 className='text-base font-bold line-clamp-2'>{title}</h1>
+        <Link href={`/archives/${volume.slug}/${issue.slug}/${slug}`}>
+          <h1 className='text-base font-bold line-clamp-2'>{title}</h1>
+        </Link>
         <p className='text-sm text-neutral-600 line-clamp-3'>{description}</p>
         <button className='border px-6 py-1 border-neutral-700 text-sm cursor-pointer'>
           <Link href={`/archives/${volume.slug}/${issue.slug}/${slug}`}>Read More</Link>
