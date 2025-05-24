@@ -26,9 +26,9 @@ const IssuesPage = async ({ params }) => {
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Issue - {issue.name}</h1>
 
       {filteredArticles.length > 0 ? (
-        <div key={issue._id} className='w-full grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4'>
+        <div key={issue._id} className='w-full grid grid-cols-1 lg:grid-cols-2 gap-8'>
           {filteredArticles.map((article) => (
-            <div key={article._id} className='max-w-[350px]'>
+            <div key={article._id} className='sm:max-w-[350px] mx-auto'>
               <ArticleCard {...article} />
             </div>
           ))}

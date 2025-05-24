@@ -26,19 +26,19 @@ const ArchivesPage = async () => {
             <div className='w-max bg-[var(--royal-yellow)] py-2 px-4 font-sans font-lg font-medium text-black'>
               <Link href={`/archives/${volume.slug}`}>{volume.year}</Link>
             </div>
-            <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4'>
+            <ul className='w-full grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 px-8'>
               {issues
                 .filter((issue) => issue.volume._id === volume._id)
                 .map((issue) => (
-                  <div
+                  <li
                     key={issue._id}
                     className='w-max space-y-5 cursor-pointer hover:text-blue-700 duration-200 relative after:content-[""] after:w-0 after:h-[0.3px] hover:after:w-full after:duration-200 after:absolute after:-bottom-0.5 after:left-0 after:bg-black hover:after:bg-blue-700 after:rounded-full'>
                     <Link href={`/archives/${volume.slug}/${issue.slug}`}>
-                      {volume.name} - ({issue.name})
+                      {issue.name} - ({volume.name})
                     </Link>
-                  </div>
+                  </li>
                 ))}
-            </div>
+            </ul>
             <div className='w-full h-0.5 my-12 bg-neutral-300' />
           </div>
         ))}
