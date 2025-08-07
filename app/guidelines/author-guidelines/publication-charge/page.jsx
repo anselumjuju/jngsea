@@ -3,54 +3,39 @@ const PublicationChargePage = () => {
     <div className='flex items-start flex-col gap-y-8'>
       <h1 className='text-xl lg:text-3xl font-serif text-black'>Publication Charge</h1>
 
-      <p className='space-y-3 text-neutral-600 text-base'>Journal of Next-Gen Science and Technology Applications (JNGSTA)</p>
-      <p className='space-y-3 text-neutral-600 text-base'>
-        The Journal of Next-Gen Science and Technology Applications (JNGSTA) is committed to offering quality open-access publication services to authors and readers across the
-        globe.
-      </p>
-      <p className='space-y-3 text-neutral-600 text-base'>
-        To cover the cost of editorial processing, peer review, journal production, DOI registration, digital archiving, and hosting,{' '}
-        <span className='font-bold text-black'>a modest publication fee</span> is applicable <span className='font-bold text-black'>only after acceptance</span> of the manuscript.
+      <p className='text-neutral-600 text-base'>
+        <strong>Journal of Next-Gen Science and Technology Applications (JNGSTA)</strong>
       </p>
 
-      <div className='space-y-1.5 text-neutral-600 text-base'>
-        <h5 className='py-2 text-lg font-bold text-neutral-700'>Article Processing Charge (APC):</h5>
-        <ul className='space-y-1.5 list-inside list-disc disc-[var(--royal-yellow)]'>
-          <li className='pl-5'>
-            <span className='font-bold text-black'>Indian Authors: </span>₹ [Insert Amount] per accepted paper
-          </li>
-          <li className='pl-5'>
-            <span className='font-bold text-black'>International Authors: </span>USD [Insert Amount] per accepted paper
-          </li>
-          <li className='pl-5'>
-            <span className='font-bold text-black'>No charges </span>are applicable for initial submission and peer review.
-          </li>
-          <li className='pl-5'>
-            <span className='font-bold text-black'>Payment </span>is to be made only after final acceptance and before publication.
-          </li>
-          <li className='pl-5'>
-            <span className='font-bold text-black'>Discounts or waivers </span>may be provided for deserving authors (e.g., students, researchers from developing countries) upon
-            request and approval.
-          </li>
-        </ul>
-      </div>
+      <p className='text-neutral-600 text-base'>
+        The <strong>Journal of Next-Gen Science and Technology Applications (JNGSTA)</strong> is dedicated to fostering the dissemination of cutting-edge research across all areas
+        of science and technology. As an open-access journal, we are committed to ensuring that high-quality research remains freely accessible to researchers, academicians,
+        professionals, and the global scientific community.
+      </p>
 
-      <div className='space-y-1.5 text-neutral-600 text-base'>
-        <h5 className='py-2 text-lg font-bold text-neutral-700'>What APC </h5>
-        <ul className='space-y-1.5 list-inside list-disc disc-[var(--royal-yellow)]'>
-          <li className='pl-5'>Double-blind peer review process</li>
-          <li className='pl-5'>Typesetting, formatting, and proofreading</li>
-          <li className='pl-5'>Assignment of DOI for each paper</li>
-          <li className='pl-5'>Permanent online access and open-access hosting</li>
-          <li className='pl-5'>Inclusion in indexing databases (as applicable)</li>
-        </ul>
-      </div>
+      <p className='text-neutral-600 text-base'>
+        <strong>We do not charge any submission fee or article processing fee (APC).</strong> Authors are encouraged to submit their work without concern for publication charges.
+        Whether you're submitting a research article, review paper, or case study, the entire process—from submission to peer review to final publication—is completely free of
+        charge.
+      </p>
+
+      <p className='text-neutral-600 text-base'>
+        JNGSTA firmly believes in removing financial barriers to scholarly publishing. Our mission is to support and encourage research by providing a platform that prioritizes
+        accessibility, transparency, and academic integrity—without placing any financial burden on authors.
+      </p>
 
       <div className='space-y-3'>
-        <p className='space-y-3 text-neutral-600 text-base'>For payment instructions and invoice requests, authors will be contacted by the editorial team after acceptance.</p>
-        <p className='space-y-3 text-neutral-600 text-base'>For queries regarding publication charges or waiver requests, please contact:</p>
-        <p className='space-y-3 text-neutral-600 text-base'>
-          <span className='font-bold text-black'>Email:</span> editor.JNGSTA@rise10steps.com
+        <p className='text-neutral-600 text-base'>
+          Authors whose manuscripts are accepted for publication will be contacted directly by the editorial team with further instructions regarding the next steps in the
+          publication process.
+        </p>
+
+        <p className='text-neutral-600 text-base'>
+          For any questions or assistance related to the submission or publication process, please feel free to reach out to our editorial team.
+        </p>
+
+        <p className='text-neutral-600 text-base'>
+          <span className='font-bold text-black'>Email:</span> research@ue.ac.zm
         </p>
       </div>
     </div>

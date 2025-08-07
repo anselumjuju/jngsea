@@ -3,7 +3,7 @@ const FAQPage = () => {
     <div className='min-h-dvh flex items-start flex-col gap-y-8'>
       <h1 className='text-xl lg:text-3xl font-serif text-black'>FAQs</h1>
 
-      <ol className='space-y-6 text-base text-neutral-700 list-decimal'>
+      <ol className='pl-4 space-y-6 text-base text-neutral-700 list-decimal'>
         <li>
           <h5 className='font-semibold text-lg'>What is the scope of the Journal of Next-Gen Science and Technology Applications (JNGSTA)?</h5>
           <p className='pl-5'>
@@ -22,12 +22,12 @@ const FAQPage = () => {
 
         <li>
           <h5 className='font-semibold text-lg'>Is there a submission fee?</h5>
-          <p className='pl-5'>No, there is no fee for submitting a manuscript. However, if accepted, a publication fee may apply to cover processing and hosting costs.</p>
+          <p className='pl-5'>No, there is no submitting and processing fee.</p>
         </li>
 
         <li>
           <h5 className='font-semibold text-lg'>How long does the peer-review process take?</h5>
-          <p className='pl-5'>On average, the peer-review process takes 4–6 weeks. We strive to provide timely and constructive feedback to authors.</p>
+          <p className='pl-5'>On average, the peer-review process takes 4-m9i6 weeks. We strive to provide timely and constructive feedback to authors.</p>
         </li>
 
         <li>

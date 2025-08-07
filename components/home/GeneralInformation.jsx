@@ -30,7 +30,7 @@ const GeneralInformation = () => {
         </div>
         <div className='flex gap-2 text-sm text-neutral-600'>
           <p>
-            <span className='mr-2 font-bold text-neutral-700'>E-mail:</span> editor.JNGSTA@rise10steps.com
+            <span className='mr-2 font-bold text-neutral-700'>E-mail:</span> research@ue.ac.zm
           </p>
         </div>
       </div>
